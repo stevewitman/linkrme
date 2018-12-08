@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ToComponent } from './to/to.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'to/:slug', component: ToComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
